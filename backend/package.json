@@ -1,0 +1,45 @@
+{
+  "name": "college-discussion-forum-backend",
+  "version": "1.0.0",
+  "description": "A discussion forum for students of NITW",
+  "engines": {
+    "node": ">=14.15.1"
+  },
+  "scripts": {
+    "start": "node server",
+    "start:dev": "nodemon server",
+    "lint": "eslint . --ext .js --cache",
+    "lint:fix": "eslint . --ext .js --fix",
+    "prepare": "cd .. && husky install backend/.husky",
+    "generate:docs": "apidoc -i server -o docs"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "keywords": [],
+  "author": "Anwesha Das <iamanwesha@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.1",
+    "joi": "^17.3.0",
+    "joi-password-complexity": "^5.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.11.8",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "apidoc": "^0.50.5",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "husky": "^6.0.0",
+    "nodemon": "^2.0.6"
+  }
+}

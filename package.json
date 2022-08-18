@@ -1,0 +1,14 @@
+{
+  "name": "college-discussion-forum",
+  "version": "1.0.0",
+  "description": "A disscussion forum built using ReactJS, NodeJS and MongoDB.",
+  "scripts": {
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\""
+  },
+  "keywords": [],
+  "author": "Anwesha Das",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.2.2"
+  }
+}
